@@ -1,0 +1,73 @@
+@use './variables.scss' as vars;
+
+.galleryPage {
+	padding-top: 186px;
+}
+
+.galleryPage-title-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin-bottom: 148px;
+
+	ul {
+		@include vars.title-super-upper;
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+		align-items: center;
+
+		li {
+			color: vars.$text-color-grey;
+			cursor: pointer;
+		}
+
+		.galleryPage-title-block__filter-active {
+			color: vars.$purple-accent;
+			text-decoration: line-through;
+		}
+	}
+
+	p {
+		text-align: end;
+		color: vars.$purple-accent;
+		@include vars.h3;
+	}
+}
+
+.galleryPage-gallery-list {
+	margin-bottom: 148px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 98px;
+	flex-wrap: wrap;
+
+	li {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		.galleryPage-gallery-item__description {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			@include vars.h2;
+
+			.galleryPage-gallery-item__description__eye {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 12px;
+			}
+
+			.galleryPage-gallery-item__description__heart {
+				cursor: pointer;
+			}
+		}
+	}
+}

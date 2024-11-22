@@ -1,0 +1,116 @@
+.galleryPage {
+  padding-top: 186px;
+}
+
+.galleryPage-title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 148px;
+}
+.galleryPage-title-block ul {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.galleryPage-title-block ul li {
+  color: #666666;
+  cursor: pointer;
+}
+.galleryPage-title-block ul .galleryPage-title-block__filter-active {
+  color: #960048;
+  text-decoration: line-through;
+}
+.galleryPage-title-block p {
+  text-align: end;
+  color: #960048;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  text-align: right;
+}
+
+.galleryPage-gallery-list {
+  margin-bottom: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 98px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.galleryPage-gallery-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.galleryPage-gallery-list li .galleryPage-gallery-item__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #960048;
+}
+.galleryPage-gallery-list li .galleryPage-gallery-item__description .galleryPage-gallery-item__description__eye {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.galleryPage-gallery-list li .galleryPage-gallery-item__description .galleryPage-gallery-item__description__heart {
+  cursor: pointer;
+}
