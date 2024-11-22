@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<title>ByBlog</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header__inner">
+					<a href="#">
+						<img src="./assets/icons/logo.svg" alt="БуБлог логотип" />
+					</a>
+
+					<nav>
+						<ul>
+							<li><a href="#main" class="active-page">Главная</a></li>
+							<li><a href="#gallery">Галерея</a></li>
+							<li><a href="articles">Статьи</a></li>
+							<li><a href="#questions">Вопросы</a></li>
+						</ul>
+					</nav>
+
+					<div class="header__buttons">
+						<div class="input-block">
+							<input type="text" />
+						</div>
+						<a href="#heart" class="header__buttons__heart">
+							<img src="./assets/icons/heart.svg" alt="heart" />
+						</a>
+						<a href="#auth" class="header__buttons__auth">Войти</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="welcome">
+				<div class="container">
+					<div class="welcome__block-title">
+						<h1 class="welcome__block-title__main">
+							<em>Творческое</em>
+							<br />
+							пространство
+						</h1>
+						<div class="welcome__block-title__description">
+							<h2>
+								Вдохновляйтесь и создавайте <br />
+								шедевры, которые захватывают дух
+							</h2>
+							<h2>
+								Делитесь своим опытом <br />
+								через статьи и фотографии
+							</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery">
+				<div class="container">
+					<div class="title-block">
+						<h2>[ Галерея ]</h2>
+						<h3>
+							Игра с цветом является важным <br />
+							инструментом создания красивых и <br />
+							гармоничных произведений искусства.
+						</h3>
+					</div>
+					<ul class="gallery-list">
+						<li class="gallery-item">
+							<div class="gallery-item__title">
+								<div class="gallery-item__title__left">
+									<span class="gallery-item__title__date"> 02/23 </span>
+									<span class="gallery-item__title__author"> Дарья Булах </span>
+								</div>
+								<span class="gallery-item__title__name"> Майкл Джексон </span>
+							</div>
+							<img
+								class="gallery-item__picture"
+								src="./assets/images/gallery1.png"
+								alt="photo 1"
+							/>
+							<div class="gallery-item__description">
+								<div class="gallery-item__description__left">
+									<span>Работа выполнена на холсте размером 150х80</span>
+									<span>Живопись</span>
+								</div>
+								<a href="#image1"
+									><img src="./assets/icons/arrow-link.svg" alt="arrow link"
+								/></a>
+							</div>
+						</li>
+						<li class="gallery-item">
+							<div class="gallery-item__title">
+								<div class="gallery-item__title__left">
+									<span class="gallery-item__title__date"> 02/23 </span>
+									<span class="gallery-item__title__author"> Дарья Булах </span>
+								</div>
+								<span class="gallery-item__title__name">Киты</span>
+							</div>
+							<img
+								class="gallery-item__picture"
+								src="./assets/images/gallery2.png"
+								alt="photo 2"
+							/>
+							<div class="gallery-item__description">
+								<div class="gallery-item__description__left">
+									<span>заливка гипса в силиконовые формы</span>
+									<span>гипсовые фигуры</span>
+								</div>
+								<a href="#image2"
+									><img src="./assets/icons/arrow-link.svg" alt="arrow link"
+								/></a>
+							</div>
+						</li>
+						<li class="gallery-item">
+							<div class="gallery-item__title">
+								<div class="gallery-item__title__left">
+									<span class="gallery-item__title__date"> 02/23 </span>
+									<span class="gallery-item__title__author"> Дарья Булах </span>
+								</div>
+								<span class="gallery-item__title__name">срез камня</span>
+							</div>
+							<img
+								class="gallery-item__picture"
+								src="./assets/images/gallery3.png"
+								alt="photo 3"
+							/>
+							<div class="gallery-item__description">
+								<div class="gallery-item__description__left">
+									<span
+										>Работа выполнена на фанере, с использованием битых
+										стекол</span
+									>
+									<span>эпоксидная смола</span>
+								</div>
+								<a href="#image3"
+									><img src="./assets/icons/arrow-link.svg" alt="arrow link"
+								/></a>
+							</div>
+						</li>
+					</ul>
+					<a class="gallery-link" href="#gallery">Увидеть больше</a>
+				</div>
+			</section>
+			<section class="articles">
+				<div class="container">
+					<div class="title-block">
+						<h2>[ Статьи ]</h2>
+						<h3>
+							Просмотрите интересные статьи <br />
+							про искусство.
+						</h3>
+					</div>
+					<ul class="articles-list">
+						<li class="article-item">
+							<div class="article-item__title">
+								<h2>Artsy анализирует состояние рынка фотографии</h2>
+								<p>
+									портал Artsy анализирует состояние рынка фотографии и сообщает
+									<br />о новых аукционных рекордах.
+								</p>
+							</div>
+							<span>20 марта 2024</span>
+						</li>
+						<li class="article-item">
+							<div class="article-item__title">
+								<h2>Открыт 232-й кураторский аукцион AI «21-й век»</h2>
+								<p>
+									открыт 232-й кураторский аукцион AI «21-й век. Современное
+									<br />
+									российское искусство».
+								</p>
+							</div>
+							<span>20 марта 2024</span>
+						</li>
+						<li class="article-item">
+							<div class="article-item__title">
+								<h2>HISCOX Art and AI Report 2024</h2>
+								<p>
+									"коллекционеры искусства — об искусственном <br />интеллекте"
+									- отчет HISCOX Art and AI Report 2024 <br />
+									сообщает о том, что коллекционеры искусства все <br />
+									больше интересуются искусственным интеллектом.
+								</p>
+							</div>
+							<span>26 марта 2024</span>
+						</li>
+						<li class="article-item">
+							<div class="article-item__title">
+								<h2>Объем кредитов под залог предметов искусства</h2>
+								<p>
+									объем кредитов под залог предметов искусства растет последние
+									пять лет и может составить <br />
+									$36 млрд к концу года.
+								</p>
+							</div>
+							<span>26 марта 2024</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="questions">
+				<div class="container">
+					<div class="title-block">
+						<h2>[ Вопросы ]</h2>
+						<h3>
+							Всегда готовы выслушать и ответить <br />
+							на ваши вопросы.
+						</h3>
+					</div>
+					<div class="questions__inner">
+						<ul class="questions-list">
+							<li class="questions-item questions-item__active">
+								<span>[ 01 ]</span>
+								<span>Искусством может заняться каждый?</span>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="24" height="24" fill="white" />
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12 2C12.5523 2 13 2.44772 13 3L13 11L21 11C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13L13 13L13 21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21L11 13L3 13C2.44772 13 2 12.5523 2 12C2 11.4477 2.44771 11 3 11L11 11L11 3C11 2.44771 11.4477 2 12 2Z"
+										fill="#C3C3C3"
+									/>
+								</svg>
+							</li>
+							<li class="questions-item">
+								<span>[ 02 ]</span>
+								<span>Что такое арт-терапия?</span>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="24" height="24" fill="white" />
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12 2C12.5523 2 13 2.44772 13 3L13 11L21 11C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13L13 13L13 21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21L11 13L3 13C2.44772 13 2 12.5523 2 12C2 11.4477 2.44771 11 3 11L11 11L11 3C11 2.44771 11.4477 2 12 2Z"
+										fill="#C3C3C3"
+									/>
+								</svg>
+							</li>
+							<li class="questions-item">
+								<span>[ 03 ]</span>
+								<span>Что нужно чтобы рисовать на природе?</span>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="24" height="24" fill="white" />
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12 2C12.5523 2 13 2.44772 13 3L13 11L21 11C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13L13 13L13 21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21L11 13L3 13C2.44772 13 2 12.5523 2 12C2 11.4477 2.44771 11 3 11L11 11L11 3C11 2.44771 11.4477 2 12 2Z"
+										fill="#C3C3C3"
+									/>
+								</svg>
+							</li>
+							<li class="questions-item">
+								<span>[ 04 ]</span>
+								<span>Мастер-классы это только для детей?</span>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="24" height="24" fill="white" />
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12 2C12.5523 2 13 2.44772 13 3L13 11L21 11C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13L13 13L13 21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21L11 13L3 13C2.44772 13 2 12.5523 2 12C2 11.4477 2.44771 11 3 11L11 11L11 3C11 2.44771 11.4477 2 12 2Z"
+										fill="#C3C3C3"
+									/>
+								</svg>
+							</li>
+						</ul>
+						<ul class="questions-item__content">
+							<li class="questions-item__content__active">
+								Искусством может заняться каждый, главное желание и стремление
+								учиться новому
+							</li>
+							<li>
+								это метод психотерапии, использующий творческое самовыражение
+								для улучшения психического и эмоционального состояния.
+							</li>
+							<li>
+								Чтобы рисовать на природе, нужны мольберт, краски, кисти, бумага
+								или холст, а также удобное место для работы.
+							</li>
+							<li>
+								Мастер-классы подходят не только для детей, но и для взрослых,
+								желающих развить свои творческие навыки и получить новый опыт.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__inner__links">
+						<div class="footer__blockPages">
+							<h4>БуБлог</h4>
+							<ul>
+								<li><a href="#main">Главная</a></li>
+								<li><a href="#gallery">Галерея</a></li>
+								<li><a href="articles">Статьи</a></li>
+								<li><a href="#questions">Вопросы</a></li>
+							</ul>
+						</div>
+						<div class="footer__blockCategories">
+							<h4>Категории</h4>
+							<ul>
+								<li><a href="#painting">Живопись</a></li>
+								<li><a href="#epoxy">Эпоксидная смола</a></li>
+								<li><a href="#candles">Кокосовые свечи</a></li>
+								<li><a href="#stained-glass">Витраж</a></li>
+								<li><a href="#gypsum">Гипсовые фигуры</a></li>
+							</ul>
+						</div>
+						<div class="footer__blockPossobilities">
+							<h4>Возможности</h4>
+							<ul>
+								<li><a href="#add-article">Добавить статью</a></li>
+								<li><a href="#add-image">Добавить картинку</a></li>
+								<li><a href="#search-ideas">Поискать идеи</a></li>
+							</ul>
+						</div>
+						<div class="footer__blockLinks">
+							<h4>Соцсети</h4>
+							<ul>
+								<li>
+									<a href="https://vk.com/veloxy" target="_blank">Вконтакте</a>
+								</li>
+								<li>
+									<a href="https://t.me/evrikazavidovo" target="_blank"
+										>Телеграм</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.instagram.com/evrika.zavidovo?igsh=cno0bXNlOXo3eGZ3"
+										target="_blank"
+										>Instagram</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="footer__disclaimer">
+						Пользователь уведомлен, что любые материалы, размещенные на сайте,
+						являются объектами интеллектуальной собственности БуБлог -
+						специализированный на развлекательный контент.
+						<br /><br />
+						Любая информация, представленная на данном сайте, носит
+						исключительно информационный характер и ни при каких условиях не
+						является публичной офертой, определяемой положениями статьи 437 ГК
+						РФ.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./assets/js/questionsList.js"></script>
+	</body>
+</html>

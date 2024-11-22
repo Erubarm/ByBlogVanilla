@@ -1,0 +1,46 @@
+section.welcome {
+  min-height: 1189px;
+  height: 100vh;
+  background-image: url("../images/background-welcome.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.welcome .welcome__block-title {
+  padding-top: 386px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 42px;
+}
+section.welcome .welcome__block-title h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 146px;
+  line-height: 82%;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+section.welcome .welcome__block-title h1 em {
+  font-weight: 700;
+}
+section.welcome .welcome__block-title .welcome__block-title__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 72px;
+}
+section.welcome .welcome__block-title .welcome__block-title__description h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #960048;
+}

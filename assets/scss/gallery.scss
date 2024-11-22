@@ -1,0 +1,72 @@
+@use './variables.scss' as vars;
+
+.gallery-list {
+	margin-top: 92px;
+	margin-bottom: 86px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 32px;
+
+	.gallery-item {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 30%;
+		gap: 12px;
+		font-family: vars.$font-family;
+		@include vars.title-upper;
+
+		.gallery-item__title {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: end;
+			.gallery-item__title__left {
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+			}
+		}
+
+		.gallery-item__picture {
+			height: 490px;
+		}
+
+		.gallery-item__description {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			padding: 18px 0;
+			border-top: 2px dashed black;
+			border-bottom: 2px dashed black;
+
+			.gallery-item__description__left {
+				display: flex;
+				flex-direction: column;
+				gap: 4px;
+			}
+		}
+	}
+}
+
+.gallery-link {
+	padding: 18px 186px;
+	width: fit-content;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 10px;
+
+	background: vars.$purple-accent;
+	color: vars.$text-color-white;
+	@include vars.title-normal;
+	text-decoration: none;
+}

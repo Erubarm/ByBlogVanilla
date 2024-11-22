@@ -1,0 +1,40 @@
+@use './variables.scss' as vars;
+
+section.welcome {
+	min-height: 1189px;
+	height: 100vh;
+	background-image: url('../images/background-welcome.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.welcome__block-title {
+		padding-top: 386px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 42px;
+
+		h1 {
+			color: vars.$text-color-white;
+			font-weight: 600;
+			font-size: 146px;
+			line-height: 82%;
+			letter-spacing: -0.06em;
+			text-transform: uppercase;
+
+			em {
+				font-weight: 700;
+			}
+		}
+
+		.welcome__block-title__description {
+			display: flex;
+			flex-direction: row;
+			gap: 72px;
+
+			h2 {
+				@include vars.h2;
+			}
+		}
+	}
+}

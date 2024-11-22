@@ -1,0 +1,67 @@
+@use './variables.scss' as vars;
+
+.questions__inner {
+	margin-top: 72px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	@include vars.title-super-upper;
+
+	.questions-list {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 100%;
+
+		.questions-item {
+			cursor: pointer;
+
+			padding: 32px 0;
+			border-bottom: 3px dashed vars.$text-color;
+			color: vars.$text-color-grey;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			transition: color 0.3s ease;
+
+			svg {
+				transition: transform 0.3s ease;
+			}
+		}
+
+		.questions-item__active {
+			color: vars.$purple-accent;
+
+			svg {
+				transform: rotate(45deg);
+				fill: #960048;
+			}
+		}
+
+		.questions-item:first-child {
+			border-top: 3px dashed vars.$text-color;
+		}
+	}
+
+	.questions-item__content {
+		width: 416px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		li {
+			text-align: center;
+			display: none;
+		}
+
+		.questions-item__content__active {
+			display: flex;
+			color: vars.$purple-accent;
+		}
+	}
+}

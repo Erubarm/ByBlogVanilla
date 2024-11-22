@@ -1,0 +1,94 @@
+header {
+  margin-top: 72px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__inner nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 72px;
+}
+.header__inner nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #0a0020;
+  padding-bottom: 1px;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.header__inner nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+}
+.header__inner nav ul li a:hover::after {
+  width: 100%;
+}
+.header__inner nav ul li a.active-page {
+  color: #960048;
+}
+.header__inner nav ul li a.active-page::after {
+  width: 100%;
+}
+.header__inner .header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.header__inner .header__buttons .input-block {
+  padding: 18px 52px 18px 26px;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+}
+.header__inner .header__buttons .input-block input {
+  border: none;
+  background-color: inherit;
+  outline: none;
+  color: #777777;
+}
+.header__inner .header__buttons .header__buttons__heart {
+  padding: 15px;
+  border-radius: 100px;
+  background-color: #f2f2f2;
+}
+.header__inner .header__buttons .header__buttons__auth {
+  padding: 18px 50px;
+  border-radius: 10px;
+  background-color: #960048;
+  text-decoration: none;
+  color: white;
+}

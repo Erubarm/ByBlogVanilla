@@ -1,0 +1,52 @@
+@use '../css/normalize.css';
+@use './variables' as vars;
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+button {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	cursor: pointer;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #ffff;
+	font-family: vars.$font-family;
+}
+
+section {
+	margin-bottom: 128px;
+}
+
+.container {
+	max-width: 1523px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.title-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	h2 {
+		color: vars.$purple-accent;
+		@include vars.h2;
+	}
+
+	h3 {
+		@include vars.h3;
+	}
+}

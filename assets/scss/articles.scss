@@ -1,0 +1,47 @@
+@use './variables.scss' as vars;
+
+.articles-list {
+	margin-top: 72px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 24px;
+
+	.article-item {
+		a {
+			text-decoration: none;
+		}
+
+		h2 {
+			@include vars.h4;
+			color: vars.$purple-accent;
+		}
+
+		p,
+		span {
+			@include vars.title-normal;
+			color: vars.$text-color-grey;
+		}
+
+		background-color: vars.$background-grey;
+
+		height: 384px;
+		padding: 52px;
+		border-radius: 16px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.article-item__title {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+		}
+	}
+
+	.article-item:nth-child(even) {
+		flex: 1 1 33%;
+	}
+}

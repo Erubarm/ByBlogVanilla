@@ -1,0 +1,100 @@
+@use './variables.scss' as vars;
+
+.footer__inner {
+	a {
+		color: vars.$text-color-grey;
+		text-decoration: none;
+	}
+
+	display: flex;
+	flex-direction: column;
+	gap: 96px;
+
+	margin-bottom: 128px;
+
+	.footer__inner__links {
+		h4 {
+			@include vars.h4;
+		}
+		ul {
+			li {
+				button {
+					@include vars.title-normal;
+					color: #666666;
+
+					border: none;
+					background-color: inherit;
+				}
+			}
+		}
+
+		.footer__blockPages {
+			h4 {
+				font-family: vars.$font-secondary;
+				color: vars.$purple-accent;
+			}
+		}
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.footer__blockPages,
+		.footer__blockCategories,
+		.footer__blockPossobilities,
+		.footer__blockLinks {
+			display: flex;
+			flex-direction: column;
+			gap: 72px;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				gap: 32px;
+
+				li {
+					button,
+					a {
+						transition: color 0.3s ease;
+					}
+					button:hover,
+					a:hover {
+						color: vars.$purple-accent;
+					}
+				}
+			}
+		}
+
+		.footer__blockLinks {
+			ul {
+				li {
+					a {
+						position: relative;
+						padding-bottom: 2px;
+						text-decoration: none;
+						color: #666666;
+						transition: color 0.3s ease;
+					}
+
+					a:hover {
+						color: vars.$purple-accent;
+					}
+
+					a::after {
+						position: absolute;
+						content: '';
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 2px;
+						background-color: currentColor;
+					}
+				}
+			}
+		}
+	}
+
+	.footer__disclaimer {
+		color: #cecece;
+	}
+}

@@ -1,0 +1,57 @@
+$purple-accent: #960048;
+$text-color: #0a0020;
+$text-color-white: #ffff;
+$text-color-grey: #666666;
+$background-grey: #ececec;
+
+$font-family: 'Inter', sans-serif;
+$font-secondary: 'Playfair Display', sans-serif;
+
+@mixin title-normal {
+	// title
+	font-family: $font-family;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+@mixin title-upper {
+	// title_1
+	font-family: $font-family;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+@mixin title-super-upper {
+	// text
+	font-family: $font-family;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 110%;
+	letter-spacing: -0.04em;
+}
+
+@mixin h2 {
+	// h3
+	font-family: $font-family;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 140%;
+	color: $purple-accent;
+}
+@mixin h3 {
+	// h1
+	font-family: $font-family;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 110%;
+	letter-spacing: -0.04em;
+	text-align: right;
+}
+
+@mixin h4 {
+	// h2
+	font-family: $font-family;
+	font-weight: 700;
+	font-size: 32px;
+}
