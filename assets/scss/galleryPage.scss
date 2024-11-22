@@ -21,6 +21,11 @@
 		li {
 			color: vars.$text-color-grey;
 			cursor: pointer;
+			transition: text-decoration 0.3s ease;
+		}
+
+		li:hover {
+			text-decoration: line-through;
 		}
 
 		.galleryPage-title-block__filter-active {

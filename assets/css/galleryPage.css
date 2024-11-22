@@ -36,6 +36,13 @@
 .galleryPage-title-block ul li {
   color: #666666;
   cursor: pointer;
+  -webkit-transition: -webkit-text-decoration 0.3s ease;
+  transition: -webkit-text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+}
+.galleryPage-title-block ul li:hover {
+  text-decoration: line-through;
 }
 .galleryPage-title-block ul .galleryPage-title-block__filter-active {
   color: #960048;
