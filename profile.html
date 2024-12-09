@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<title>Профиль - БуБлог</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header__inner">
+					<a href="#">
+						<img src="./assets/icons/logo.svg" alt="БуБлог логотип" />
+					</a>
+
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html" id="nav-home">Главная</a>
+							</li>
+							<li><a href="gallery.html" id="nav-gallery">Галерея</a></li>
+							<li><a href="articles.html" id="nav-articles">Статьи</a></li>
+							<li><a href="questions.html" id="nav-questions">Вопросы</a></li>
+						</ul>
+					</nav>
+
+					<div class="header__buttons">
+						<div class="input-block">
+							<input type="text" />
+						</div>
+						<a href="#heart" class="header__buttons__heart">
+							<img src="./assets/icons/heart.svg" alt="heart" />
+						</a>
+						<div class="profile-dropdown">
+							<a href="#" class="header__buttons__auth" id="auth-button"
+								>Войти</a
+							>
+							<div class="dropdown-content" id="dropdown-content">
+								<a href="/profile.html">Личный кабинет</a>
+								<a href="#" id="logout-button">Выйти</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="profile-page">
+			<div class="container">
+				<div class="profile-content">
+					<h1>Профиль пользователя</h1>
+					<!-- Ваш контент -->
+				</div>
+			</div>
+		</section>
+
+		<script src="./assets/js/authUser.js"></script>
+	</body>
+</html>

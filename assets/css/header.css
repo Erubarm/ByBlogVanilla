@@ -92,3 +92,40 @@ header {
   text-decoration: none;
   color: white;
 }
+
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  padding: 21px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #ececec;
+}
+.dropdown-content a {
+  text-decoration: none;
+  color: #0a0020;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.dropdown-content a:hover {
+  color: #960048;
+}
+
+.profile-dropdown:hover .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

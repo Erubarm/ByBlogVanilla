@@ -9,3 +9,11 @@
 
 @import url('./galleryPage.css');
 @import url('./addCard.css');
+
+@import url('./articlesPage.css');
+@import url('./addArticlePage.css');
+
+@import url('./questionsPage.css');
+
+@import url('./auth.css');
+@import url('./reg.css');

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<title>Авторизация - БуБлог</title>
+	</head>
+	<body>
+		<section class="auth-page">
+			<div class="container">
+				<div class="auth-content">
+					<div class="logo">
+						<img src="./assets/icons/logo.svg" alt="БуБлог логотип" />
+					</div>
+					<div class="auth-form">
+						<h2>Авторизация</h2>
+						<form action="http://localhost:3000/login" method="post">
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" required />
+							</div>
+							<div class="form-group">
+								<label for="password">Пароль</label>
+								<input type="password" id="password" name="password" required />
+							</div>
+							<button type="submit" class="btn-submit">Войти</button>
+						</form>
+						<div class="auth-links">
+							<a href="registration.html">Нет аккаунта? Зарегистрируйся!</a>
+						</div>
+					</div>
+
+					<div class="auth-image">
+						<img src="./assets/images/Frame 282.png" alt="Девушка" />
+					</div>
+				</div>
+
+				<div class="auth-decoration">
+					<img src="./assets/images/Frame 281.png" alt="Декорация" />
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

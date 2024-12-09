@@ -1,0 +1,104 @@
+@use './variables.scss' as vars;
+
+.articlesPage {
+	padding-top: 186px;
+}
+
+.sort-filt-block {
+	margin-bottom: 70px;
+
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	justify-content: start;
+
+	.sort {
+		padding: 18px 21px;
+		background: vars.$background-grey;
+
+		border: none;
+		border-radius: 10px;
+
+		span {
+			@include vars.title-normal;
+			color: vars.$text-color-grey;
+			text-align: center;
+		}
+	}
+
+	.filt {
+		padding: 18px 32px;
+		background: vars.$background-grey;
+
+		border: none;
+		border-radius: 10px;
+	}
+}
+
+.article-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 36px;
+
+	.article-item {
+		background-color: vars.$background-grey;
+		border-radius: 16px;
+		padding: 42px 32px;
+		max-width: 678px;
+		height: 748px;
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.article-header {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			span {
+				color: vars.$text-color-grey;
+			}
+
+			button {
+				border: none;
+				background: inherit;
+			}
+		}
+
+		.article-body {
+			@include vars.title-super-upper;
+
+			h3 {
+				color: vars.$purple-accent;
+			}
+			p {
+				color: vars.$text-color-grey;
+			}
+		}
+
+		.article-footer {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			span {
+				@include vars.h2;
+				color: vars.$text-color;
+			}
+
+			a {
+				padding: 18px 38px;
+				text-decoration: none;
+				color: vars.$text-color-white;
+				background: vars.$purple-accent;
+				border-radius: 16px;
+			}
+		}
+	}
+}

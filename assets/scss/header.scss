@@ -91,3 +91,36 @@ header {
 		}
 	}
 }
+
+.profile-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 20px;
+	padding: 21px;
+
+	flex-direction: column;
+	gap: 12px;
+	align-items: center;
+	text-align: center;
+
+	background-color: vars.$background-grey;
+
+	a {
+		text-decoration: none;
+		color: vars.$text-color;
+		transition: color 0.3s ease;
+	}
+
+	a:hover {
+		color: vars.$purple-accent;
+	}
+}
+
+.profile-dropdown:hover .dropdown-content {
+	display: flex;
+}

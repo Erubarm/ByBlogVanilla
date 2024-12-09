@@ -38,7 +38,15 @@
 						<a href="#heart" class="header__buttons__heart">
 							<img src="./assets/icons/heart.svg" alt="heart" />
 						</a>
-						<a href="#auth" class="header__buttons__auth">Войти</a>
+						<div class="profile-dropdown">
+							<a href="auth.html" class="header__buttons__auth" id="auth-button"
+								>Войти</a
+							>
+							<div class="dropdown-content" id="dropdown-content">
+								<a href="/profile.html">Личный кабинет</a>
+								<a href="#" id="logout-button">Выйти</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -347,8 +355,8 @@
 						<div class="footer__blockPossobilities">
 							<h4>Возможности</h4>
 							<ul>
-								<li><a href="#add-article">Добавить статью</a></li>
-								<li><a href="#add-image">Добавить картинку</a></li>
+								<li><a href="add-article.html">Добавить статью</a></li>
+								<li><a href="addCard.html">Добавить картинку</a></li>
 								<li><a href="#search-ideas">Поискать идеи</a></li>
 							</ul>
 						</div>
@@ -389,5 +397,6 @@
 
 		<script src="./assets/js/questionsList.js"></script>
 		<script src="./assets/js/addClassActivePage.js"></script>
+		<script src="./assets/js/authUser.js"></script>
 	</body>
 </html>

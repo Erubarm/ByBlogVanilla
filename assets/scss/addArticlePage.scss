@@ -1,0 +1,40 @@
+@import 'variables';
+
+.add-article-page {
+	padding-top: 186px;
+}
+
+.add-article-page h2 {
+	@include h2;
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+	@include title-normal;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid $text-color-grey;
+	border-radius: 4px;
+	@include title-normal;
+}
+
+.btn-submit {
+	padding: 10px 20px;
+	background-color: $purple-accent;
+	color: $text-color-white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	@include title-normal;
+}

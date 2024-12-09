@@ -10,7 +10,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./assets/css/index.css" />
-		<title>Add New Card</title>
+		<title>Добавить статью - ByBlog</title>
 	</head>
 	<body>
 		<header>
@@ -19,14 +19,18 @@
 					<a href="#">
 						<img src="./assets/icons/logo.svg" alt="БуБлог логотип" />
 					</a>
+
 					<nav>
 						<ul>
-							<li><a href="index.html">Главная</a></li>
-							<li><a href="gallery.html">Галерея</a></li>
-							<li><a href="articles.html">Статьи</a></li>
-							<li><a href="questions.html">Вопросы</a></li>
+							<li>
+								<a href="index.html" id="nav-home">Главная</a>
+							</li>
+							<li><a href="gallery.html" id="nav-gallery">Галерея</a></li>
+							<li><a href="articles.html" id="nav-articles">Статьи</a></li>
+							<li><a href="questions.html" id="nav-questions">Вопросы</a></li>
 						</ul>
 					</nav>
+
 					<div class="header__buttons">
 						<div class="input-block">
 							<input type="text" />
@@ -39,30 +43,36 @@
 				</div>
 			</div>
 		</header>
-		<main class="addCardPage">
-			<div class="container">
-				<h1>Добавить новую карточку</h1>
-				<form
-					id="addCardForm"
-					action="http://localhost:3000/add-card"
-					method="post"
-				>
-					<label for="category">Категория:</label>
-					<select id="category" name="category">
-						<option value="живопись">Живопись</option>
-						<option value="эпоксидная смола">Эпоксидная смола</option>
-						<option value="гипсовые фигуры">Гипсовые фигуры</option>
-						<option value="кокосовые свечи">Кокосовые свечи</option>
-						<option value="витраж">Витраж</option>
-					</select>
-					<label for="title">Название:</label>
-					<input type="text" id="title" name="title" required />
-					<label for="imageUrl">Ссылка на изображение:</label>
-					<input type="text" id="imageUrl" name="imageUrl" required />
-					<input type="hidden" id="views" name="views" value="0" />
-					<button type="submit">Добавить карточку</button>
-				</form>
-			</div>
+		<main>
+			<section class="add-article-page">
+				<div class="container">
+					<h2>Добавить статью</h2>
+					<form action="#" method="post">
+						<div class="form-group">
+							<label for="title">Название</label>
+							<input type="text" id="title" name="title" required />
+						</div>
+						<div class="form-group">
+							<label for="description">Описание</label>
+							<textarea
+								id="description"
+								name="description"
+								rows="10"
+								required
+							></textarea>
+						</div>
+						<div class="form-group">
+							<label for="category">Категория</label>
+							<select id="category" name="category" required>
+								<option value="art">Искусство</option>
+								<option value="science">Научное</option>
+								<option value="mini">Мини-статья</option>
+							</select>
+						</div>
+						<button type="submit" class="btn-submit">Добавить</button>
+					</form>
+				</div>
+			</section>
 		</main>
 		<footer>
 			<div class="container">
@@ -129,5 +139,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./assets/js/addClassActivePage.js"></script>
 	</body>
 </html>
